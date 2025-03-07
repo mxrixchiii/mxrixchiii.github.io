@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Enlaces en html</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            header,nav,main,footer{
+                width: 100%;
+                padding: 30px;
+                background-color: #B82132;
+                color: antiquewhite;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            header{
+                background-color: darkred;
+                height: auto;
+                padding: 30px;
+                font-size: 24px;
+            }
+            nav{
+                height: auto;
+                padding: 15px;
+                background-color: #D2665A;
+            }
+            main{
+                height: auto;
+                background-color: antiquewhite;
+                color: #B82132;
+                padding-top: 45px;
+                padding-bottom: 48px;
+            }
+            section{
+                width: 65%;
+                min-width: 360px;
+                height: auto;
+                background-color: #FDAB9E;
+                margin-bottom: 45px;
+                margin-top: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                padding: 35px;
+                overflow-y: auto;
+                font-family: "Public Sans", serif;
+                text-align: justify;
+            }
+            h2{
+                margin-bottom: 20px;
+                font-size: 26px;
+                font-family: "Poppins", serif;
+            }
+            p{
+                color:antiquewhite;
+            }
+            header,footer{
+                text-align: center;
+                font-family: "Poppins", serif;
+            }
+            footer{
+                font-size: 24px;
+                background-color: #D2665A;
+            }
+            footer h6{
+                background-color: #FDAB9E;
+                color: #B82132;
+                padding: 9px;
+                width: 30%;
+                border-radius: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 3px;
+            }
+            
+            /*text-decoration: none; Quita subrayado del enlace*/
+            
+            a:link{
+                color: firebrick;
+            }
+            a:visited{
+                color:indianred;
+            }
+            a:active{
+                color: mistyrose;
+            }
+            /*pasa mouse encima del texto*/
+            a:hover{
+                color:#6F0000;
+            }
+            nav ul{
+                text-align: center;
+            }
+            nav ul li{
+                list-style-type: none;
+                width: 8%;
+                min-width: 120px;
+                height: auto;
+                background-color: #A31D1D;
+                display: inline-block;
+                padding: 15px;
+                margin: 10px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            /*Este bloque de codigo modifica los estados de enlaces para el menu*/
+            nav ul li a:link, nav ul li a:visited{
+                color: antiquewhite;
+                text-decoration: none;
+                font-size: 16px;
+                font-family: "Public Sans", serif;
+            }
+            nav ul li:hover{
+                background-color: #6F0000;
+                width: 10%;
+            }
+            nav ul li a:hover{
+                color: #F7AD80;
+            }
+            .hover_2:hover{
+                background-color: #FDAB9E;
+            }
+            .hover_2 a:hover{
+                color: brown;
+            }
+            #fondo{
+                background-image:url(../imagenes/coordinado_Mesa%20de%20trabajo%201.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #logo_izq, #logo_der{
+                width: 50px;
+                float: right;
+                filter: opacity(15%);
+                margin-top: 0px;
+            }
+            #inicio{
+                float: right;
+                width: 44px;
+                height: 43px;
+                margin-right: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id="logo_der" src="../imagenes/simbolo.png" alt="marca_personal">
+            <img style="float: left;" id="logo_izq" src="../imagenes/simbolo.png" alt="marca_personal">
+            <h1 class="animate__animated animate__fadeInDown animate__delay-1s animate__slow">ENLACES EN HTML</h1>
+        </header>
+        <nav id="fondo">
+            <ul>
+                <li><a class="animate__animated animate__fadeIn animate__delay-2s animate__slow" href="formatos_texto.html"target="_blank">Formatos</a></li>
+                <li class="hover_2"><a class="animate__animated animate__fadeIn animate__delay-2s animate__slow" id="listas_enlace" href="Listas.html"target="_blank">Listas</a></li>
+                <li><a class="animate__animated animate__fadeIn animate__delay-2s animate__slow" id="listas_enlace" href="Enlaces.html"target="_blank">Enlaces</a></li>
+                <li class="hover_2"><a class="animate__animated animate__fadeIn animate__delay-2s animate__slow" href="Tablas.html"target="_blank">Tablas</a></li>
+                <li><a class="animate__animated animate__fadeIn animate__delay-2s animate__slow" id="listas_enlace" href="Imagenes.html"target="_blank">Imagenes</a></li>
+                <li class="hover_2"><a class="animate__animated animate__fadeIn animate__delay-2s animate__slow" href="Audio.html"target="_blank">Audios</a></li>
+                <li><a class="animate__animated animate__fadeIn animate__delay-2s animate__slow" href="../html/videos.html"target="_blank">Videos</a></li>
+                <li class="hover_2"><a class="animate__animated animate__fadeIn animate__delay-2s animate__slow" id="listas_enlace" href="../html/formularios.html"target="_blank">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="animate__animated animate__fadeInRight animate__delay-3s animate__slow">
+                <h2>Enlaces Externos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat neque justo, et varius lacus sagittis non. Integer lacinia maximus efficitur. <a href="http://www.buap.mx">Benemérita Universidad Autónoma de Puebla</a> Aliquam erat volutpat. Sed sit amet libero ac arcu hendrerit mattis eu eget magna. In in felis accumsan, volutpat metus sed, hendrerit ipsum. Mauris dolor nibh, mollis ultrices sagittis id, suscipit a diam. <a href="http://www.udg.mx" target="_blank">Universidad de Guadalajara</a> Aliquam laoreet accumsan justo sed placerat. Etiam ornare hendrerit ante at mattis. Curabitur lorem enim, consequat nec viverra nec, hendrerit quis mauris. Cras scelerisque facilisis diam, vel sagittis felis. Aenean arcu magna, elementum eu neque ut, convallis semper lacus. Nunc est sapien, euismod eget sodales sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti delectus blanditiis quia excepturi quam itaque explicabo cumque illo dolor, quibusdam vel velit debitis. Animi accusantium, velit at ipsam consectetur esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dolor, incidunt sapiente quod fugiat mollitia suscipit consectetur ratione, illum ut distinctio id, ab quibusdam unde hic laboriosam ipsam quis vero explicabo et sit, omnis nam. Numquam explicabo, laborum. Animi ipsum recusandae sunt repellat dignissimos quam explicabo rerum non, laborum error, nostrum praesentium voluptatibus suscipit tempore repellendus iure obcaecati reiciendis ea mollitia consequuntur porro eaque assumenda consequatur amet! Debitis, ea, molestiae.</p>
+            </section>
+            <section class="animate__animated animate__fadeInRight animate__delay-3s animate__slow">
+                <h2>Enlaces Internos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis tristique erat, in commodo mauris eleifend eu. <a href="formatos_texto.html">Práctica de HTML de Formatos de Texto</a> Morbi molestie feugiat erat, non mattis risus. Etiam tempus felis lectus, ac convallis sapien venenatis vel. Maecenas fringilla consequat condimentum. Duis consequat interdum pharetra. <a href="Listas.html" target="_blank">Práctica de HTML de Listas</a> Proin in ultricies tellus. Vivamus sem purus, tincidunt a malesuada sit amet, tincidunt ac leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat ultricies elit, sed accumsan justo faucibus a. Morbi sed consequat orci, id placerat odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed natus nesciunt velit laborum, cupiditate sapiente optio dolorum, neque numquam expedita, quae. Vitae expedita, asperiores natus voluptates neque porro suscipit maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit architecto itaque magnam, iure repudiandae pariatur saepe temporibus libero dolorum? Reiciendis natus quos nesciunt molestias beatae, fugiat tenetur! Voluptas error enim cupiditate voluptatibus nisi culpa provident consequuntur cumque accusantium architecto nobis repellat, voluptatum doloribus labore veritatis laudantium nostrum aperiam velit voluptatem itaque doloremque! Ea quibusdam, odio, velit quae deleniti porro sed dolorem voluptatem eveniet dolores praesentium doloremque repudiandae veniam debitis, non.</p>
+            </section>
+            <section class="animate__animated animate__fadeInRight animate__delay-3s animate__slow">
+                <h2>Enlaces a Archivo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mattis turpis, nec tristique libero. <a href="21%20Peralta%20Sanchez%20Mariana%20-%20Formatos%20Texto.pdf" target="_blank">Código de Práctica de HTML de Formatos de Texto</a> Sed euismod varius tortor eu dictum. Sed varius lorem in quam consectetur, ut aliquam lorem rhoncus. Suspendisse eget ex tellus. In sit amet eros vel purus porta sodales. Nulla ullamcorper a purus in vestibulum. Vivamus eget felis at purus tincidunt gravida id ac odio. <a href="htpps://www.youtube.com">YouTube</a> Fusce efficitur lectus sed risus sollicitudin, non suscipit tortor luctus. Aliquam quis mattis felis, nec porttitor orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla ut ullamcorper nisi. Aenean venenatis eu leo vitae auctor. Maecenas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptate minima, omnis rerum possimus ab quae doloremque atque consequatur, sit error quo debitis. In excepturi aspernatur, neque tenetur, sapiente aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam saepe exercitationem eaque, libero veritatis natus earum, animi quos delectus blanditiis. Sequi unde quis at veritatis saepe quae, hic. Velit tempora sunt soluta quaerat dolor culpa, mollitia cum, esse necessitatibus quos debitis, quod non nostrum autem deleniti officia ab aspernatur voluptas illo assumenda illum delectus reiciendis eum odit? Soluta incidunt laborum labore tempore, adipisci nam, cupiditate dolorem quisquam velit dolor vero.</p>
+            </section>
+            <section class="animate__animated animate__fadeInRight animate__delay-3s animate__slow">
+                <h2>Enlace con Descarga de Archivos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet felis lobortis vestibulum tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <a href="21%20Peralta%20Sanchez%20Mariana%20-%20Formatos%20texto.png" download>Vista del Navegador Prácticas de Formato</a> Cras facilisis arcu consectetur dapibus iaculis. Morbi ultricies nibh sit amet neque pharetra, quis pellentesque ex finibus. Donec ac dui dui. Nunc odio augue, ultricies in tellus at, tincidunt sagittis tellus. Maecenas eleifend arcu eget lacinia vestibulum. Suspendisse potenti. <a href="http://www.ebay.com">Ebay</a> Pellentesque sollicitudin mauris non quam malesuada aliquet. Donec vitae imperdiet lacus. Integer maximus nibh non efficitur commodo. Cras aliquam faucibus eros, a vehicula felis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo corporis, veniam, dolorum fuga sapiente quae in ipsam ab natus tenetur fugit nesciunt! Doloribus, porro. Dicta quasi tempora quia culpa. Labore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sequi magnam quo quas quae, doloribus a omnis excepturi, sit expedita dicta necessitatibus mollitia, fuga animi, dolorum voluptatum modi tempore similique perspiciatis! Dolores expedita, quisquam alias excepturi ducimus omnis magnam distinctio, consectetur rem odit at soluta voluptatibus ab dolor qui ut, fugiat fugit praesentium necessitatibus sit aut commodi amet architecto quam! Consequuntur odio sapiente maxime voluptates at, illum vitae nostrum corporis!</p>
+            </section><br>
+            <a href="../index.html"><img id="inicio" src="../imagenes/icono-enlaces.png" alt="Ícono con enlace a página de inicio"></a><br><br>
+        </main>
+        <footer id="fondo">
+            <h6>Elaborado por Mariana Peralta Sánchez</h6>
+        </footer>
+    </body>
+</html>

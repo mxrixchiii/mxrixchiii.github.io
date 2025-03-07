@@ -1,0 +1,545 @@
+<html>
+    <head>
+        <title>Tablas en HTML</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+            /*REGLA UNIVERSAL=*{}*/
+            *{
+                padding: 0;
+                /*Margin separa cajas*/
+                margin: 0;
+                box-sizing: border-box;
+            }
+            header,nav,main,footer{
+                width: 100%;
+                color:mistyrose;
+                padding: 30px;
+                /*Evita crecer las cajas*/
+                box-sizing: border-box;
+            }
+            header,footer{
+                height: auto;
+                background-color:#DB7093;
+                text-align: center;
+                font-size: 24px;
+                font-family: "Poppins", serif;
+            }
+            nav{
+                height: auto;
+                background-color:pink;
+                padding: 15px;
+            }
+            main{
+                height: auto;
+                background-color: mistyrose;
+                padding-top: 45px;
+                padding-bottom: 41px;
+                overflow-x: hidden;
+            }
+            h2{
+                margin-bottom: 20px;
+                font-size: 26px;
+                font-family: "Poppins", serif;
+            }
+            section{
+                width: 65%;
+                min-width: 360px;
+                height: auto;
+                background-color: palevioletred;
+                color: mistyrose;
+                margin-bottom: 45px;
+                margin-top: 10px;
+                padding: 35px;
+                /*Para centrar las cajas*/
+                margin-right: auto;
+                margin-left: auto;
+                overflow-x: auto;
+                font-family: "Public Sans", serif;
+                text-align: justify;
+            }
+            footer{
+                height: auto;
+                padding: 30px;
+                font-size: 24px;
+                background-color: pink;
+            }
+            footer h6{
+                background-color: palevioletred;
+                color: mistyrose;
+                padding: 9px;
+                width: 30%;
+                border-radius: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 3px;
+            }
+            nav ul{
+                text-align: center;
+            }
+            nav ul li{
+                width: 8%;
+                min-width: 120px;
+                height: auto;
+                background-color: palevioletred;
+                padding: 15px;
+                /*Lista en horizotal*/
+                display: inline-block;
+                margin:10px;
+                /*Para quitar las viñetas de la lista*/
+                list-style-type: none;
+                text-align: center;
+                border-radius: 10px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color:mistyrose;
+                font-size: 16px;
+                font-family: "Public Sans", serif;
+            }
+            nav ul li a:link; nav ul li:visited{
+                color: mistyrose;
+                text-decoration: none;
+                font-family: "Public Sans", serif;
+            }
+            nav ul li:hover{
+                width: 10%;
+                background-color:mediumvioletred;
+            }
+            nav ul li a:hover{
+                color: white;
+            }
+            .hover_2:hover{
+                background-color: hotpink;
+            }
+            .hover_2 a:hover{
+                color: mediumvioletred;
+            }
+            #tab_simple{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                /*border-width: 5px;
+                border-style: solid;
+                border-color: deeppink;*/
+                border-collapse: collapse;
+            }
+            #tab_simple td,#tab_simple th{
+                border-width: 3px;
+                border-style: solid;
+                border-color:mistyrose;
+            }
+            #tab_simple th{
+                background-color: mediumvioletred;
+                color: mistyrose;
+                padding: 5px;
+                text-align: left;
+            }
+            #tab_simple td{
+                background-color: pink;
+                padding: 10px;
+                color: palevioletred;
+            }
+            #tab_Libros{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                border-collapse: collapse;
+                background-color: pink;
+            }
+            /*Regla de un Identificador*/
+            #tab_Libros th{
+                background-color: hotpink;
+                color: mistyrose;
+                height: 80px;
+                padding: 5px;
+            }
+            #tab_Libros td{
+                /*background-color: lightblue;*/
+                color: palevioletred;
+                height: 50px;
+                padding: 10px;
+            }
+            #tab_Libros td,#tab_libros th{
+                border-width: 3px;
+                border-style: solid;
+                border-color: mistyrose;
+            }
+            /*Color alternado en las filas*/
+            #tab_Libros tbody tr:hover{
+                background-color: mistyrose;
+            }
+            /*Esta regla genera el hover en las celdas que corresponden al tbody*/
+            #tab_Libros tbody tr td:hover{
+                background-color: palevioletred;
+                color: mistyrose;
+            }
+            #tab_pelis{
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                /*border-collapse: collapse;*/
+                border-spacing: 10px;
+            }
+            #tab_pelis th,#tab_pelis td{
+                border-width: 3px;
+                border-color:mediumvioletred;
+                border-style: solid;
+            }
+            #tab_pelis th{
+                background-color: mediumvioletred;
+                color: mistyrose;
+                height: 55px;
+            }
+            #tab_pelis td{
+                height: 50px;
+                padding: 10px;
+            }
+            /*Color alternado en las filas pares*/
+            #tab_pelis tbody tr:nth-child(even){
+                background-color: pink;
+                color:palevioletred;
+            }
+            #tab_pelis tbody tr:nth-child(odd){
+                background-color:mistyrose;
+                color:palevioletred;
+            }
+            #tab_responsive{
+                width: 1500px;
+                background-color: mistyrose;
+                color: palevioletred;
+                margin-top: 30px;
+                border-collapse: collapse;
+            }
+            #tab_responsive th{
+                background-color: hotpink;
+                color: mistyrose;
+                height: 5px;
+                padding: 10px;
+            }
+            #tab_responsive td,#tab_responsive th{
+                border: 3px solid mediumvioletred;
+                height: 50px;
+                padding: 10px;
+            }
+            #fondo{
+                background-image:url(../imagenes/coordinado_Mesa%20de%20trabajo%201.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #logo_izq, #logo_der{
+                width: 50px;
+                float: right;
+                filter: opacity(15%);
+                margin-top: 0px;
+            }
+            #inicio{
+                float: right;
+                width: 44px;
+                height: 43px;
+                margin-right: 14px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <img id="logo_der" src="../imagenes/simbolo.png" alt="marca_personal">
+            <img style="float: left;" id="logo_izq" src="../imagenes/simbolo.png" alt="marca_personal">
+            <h1 class="animate__animated animate__rotateInDownRight animate__delay-1s animate__slow">TABLAS EN HTML</h1>
+        </header>
+        <nav id="fondo">
+            <ul>
+                <li><a href="formatos_texto.html"target="_blank">Formatos</a></li>
+                <li class="hover_2"><a id="listas_enlace" href="Listas.html"target="_blank">Listas</a></li>
+                <li><a href="Enlaces.html"target="_blank">Enlaces</a></li>
+                <li class="hover_2"><a href="Tablas.html"target="_blank">Tablas</a></li>
+                <li><a href="Imagenes.html"target="_blank">Imagenes</a></li>
+                <li class="hover_2"><a href="Audio.html"target="_blank">Audios</a></li>
+                <li><a href="../html/videos.html"target="_blank">Videos</a></li>
+                <li class="hover_2"><a href="../html/formularios.html"target="_blank">Formularios</a></li>
+            </ul>
+    
+        </nav>
+        <main>
+            <section>
+                <h2>Tabla Simple</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nibh augue. Aenean aliquam in dolor gravida pretium. Nam sollicitudin pellentesque lorem, eu gravida mi ultricies vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vehicula molestie gravida. Fusce nec est nulla. Integer lectus lectus, varius non ipsum ut, consectetur dignissim augue. Cras ultrices libero et rhoncus mattis. Sed congue tristique varius. Vestibulum nec tellus egestas, molestie ante eu, malesuada risus. Nunc non lacinia mi. Ut eget ultricies diam. Sed posuere pellentesque laoreet. Curabitur congue eros vel commodo blandit. Cras sed sagittis ante, ac maximus.</p>
+                <table id="tab_simple" class="animate__animated animate__backInLeft animate__delay-2s animate__slower">
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Celular</th>
+                            <th>Colegio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202167983</td>
+                            <td>Jose Luis</td>
+                            <td>Benitez</td>
+                            <td>Moreno</td>
+                            <td>2228675346</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202356783</td>
+                            <td>Andrea</td>
+                            <td>Carrasco</td>
+                            <td>Sánchez</td>
+                            <td>2229823865</td>
+                            <td>Diseño Gráfico</td>
+                        </tr>
+                        <tr>
+                            <td>202064583</td>
+                            <td>Guillermo</td>
+                            <td>Perez</td>
+                            <td>Martinez</td>
+                            <td>2226540924</td>
+                            <td>Urbano Ambiental</td>
+                        </tr>
+                        <tr>
+                            <td>202267432</td>
+                            <td>Julian</td>
+                            <td>Gómez</td>
+                            <td>Silva</td>
+                            <td>2226450267</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202487693</td>
+                            <td>Berenice</td>
+                            <td>Torres</td>
+                            <td>Luján</td>
+                            <td>2229764589</td>
+                            <td>Diseño Gráfico</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla de Libros</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus, turpis id lobortis malesuada, ipsum nisl viverra odio, eu dignissim ex ligula ut neque. Vivamus a erat magna. Etiam non laoreet sapien. Ut nibh risus, dapibus nec neque ac, placerat facilisis ligula. Aenean eu dolor eleifend, vulputate orci vel, consectetur sapien. Pellentesque ut velit nec tellus viverra dignissim. Nunc sed finibus dolor. Aenean accumsan eros ut est mollis, et laoreet odio aliquam. Nam egestas dolor magna, aliquam interdum metus laoreet.</p>
+                <table id="tab_Libros" class="animate__animated animate__backInLeft animate__delay-3s animate__slower animate__repeat-1">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Año</th>
+                            <th>Editorial</th>
+                            <th>Autor</th>
+                            <th>Género</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Crónica de una muerte anunciada</td>
+                            <td>1981</td>
+                            <td>La Oveja Negra</td>
+                            <td>Gabriel García Marquez</td>
+                            <td>Novela, Crónica</td>
+                            <td>$279</td>
+                        </tr>
+                        <tr>
+                            <td>La canción de Aquiles</td>
+                            <td>2011</td>
+                            <td>ADL</td>
+                            <td>Madeline Miller</td>
+                            <td>Novela</td>
+                            <td>$361</td>
+                        </tr>
+                        <tr>
+                            <td>Asesino de Brujas</td>
+                            <td>2019</td>
+                            <td>Puck</td>
+                            <td>Shelby Mahurin</td>
+                            <td>Novela, Fantasía</td>
+                            <td>$297</td>
+                        </tr>
+                        <tr>
+                            <td>Lecciones de Estoicismo</td>
+                            <td>2021</td>
+                            <td>Taurus</td>
+                            <td>John Sellars</td>
+                            <td>Filosofía</td>
+                            <td>$319</td>
+                        </tr>
+                        <tr>
+                            <td>Ready Player One</td>
+                            <td>2011</td>
+                            <td>Penguin</td>
+                            <td>Ernest Cline</td>
+                            <td>Novela</td>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <td>Hush, Hush</td>
+                            <td>2017</td>
+                            <td>B de Block</td>
+                            <td>Becca Fitzpatrick</td>
+                            <td>Novela</td>
+                            <td>$342</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr></tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla de Películas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum nisi in varius tempor. Vivamus vulputate, nisi at porttitor pulvinar, nisi velit aliquam dolor, id dictum magna quam in lectus. Sed sit amet porta massa. In dictum ut metus a pulvinar. Sed mi sem, blandit tincidunt pharetra a, sagittis a justo. Etiam vel sodales tortor. Donec vitae risus placerat, vehicula.</p>
+                <table id="tab_pelis" class="animate__animated animate__backInLeft animate__delay-4s animate__slower animate__repeat-2">
+                    <thead>
+                        <tr>
+                            <th>Película</th>
+                            <th>Director</th>
+                            <th>Año</th>
+                            <th>Género</th>
+                            <th>Clasificación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>El Origen</td>
+                            <td>Christopher Nolan</td>
+                            <td>2010</td>
+                            <td>Acción</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Búsqueda Implacable</td>
+                            <td>2008</td>
+                            <td>Pierre Morel</td>
+                            <td>Acción</td>
+                            <td>B15</td>
+                        </tr>
+                        <tr>
+                            <td>Interestellar</td>
+                            <td>2014</td>
+                            <td>Christopher Nolan</td>
+                            <td>Ciencia</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>El Ojo</td>
+                            <td>2002</td>
+                            <td>Oxide Pang Chun</td>
+                            <td>Terror</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>Eterno Resplandor</td>
+                            <td>2004</td>
+                            <td>Michael Gondry</td>
+                            <td>Drama Romántico</td>
+                            <td>B15</td>
+                        </tr>
+                        <tr>
+                            <td>Shrek</td>
+                            <td>2001</td>
+                            <td>Joe Stillman</td>
+                            <td>Comedia</td>
+                            <td>AA</td>
+                        </tr>
+                        <tr>
+                            <td>La vida es bella</td>
+                            <td>1997</td>
+                            <td>Roberto Benigni</td>
+                            <td>Drama</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>Crepúsculo: La Saga</td>
+                            <td>2008</td>
+                            <td>Catherine Hardwicke</td>
+                            <td>Fantasía</td>
+                            <td>B15</td>
+                        </tr>
+                        <tr>
+                            <td>Ted</td>
+                            <td>2012</td>
+                            <td>Seth MacFarlane</td>
+                            <td>Comedia negra</td>
+                            <td>B15</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla de Información Alumnos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nibh augue. Aenean aliquam in dolor gravida pretium. Nam sollicitudin pellentesque lorem, eu gravida mi ultricies vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vehicula molestie gravida. Fusce nec est nulla. Integer lectus lectus, varius non ipsum ut, consectetur dignissim augue. Cras ultrices libero et rhoncus mattis. Sed congue tristique varius. Vestibulum nec tellus egestas, molestie ante eu, malesuada risus. Nunc non lacinia mi. Ut eget ultricies diam. Sed posuere pellentesque laoreet. Curabitur congue eros vel commodo blandit. Cras sed sagittis ante, ac maximus.</p>
+                <table id="tab_responsive" class="animate__animated animate__backInLeft animate__delay-5s animate__slower animate__repeat-3">
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Celular</th>
+                            <th>Colegio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202167983</td>
+                            <td>Jose Luis</td>
+                            <td>Benitez</td>
+                            <td>Moreno</td>
+                            <td>2228675346</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202356783</td>
+                            <td>Andrea</td>
+                            <td>Carrasco</td>
+                            <td>Sánchez</td>
+                            <td>2229823865</td>
+                            <td>Diseño Gráfico</td>
+                        </tr>
+                        <tr>
+                            <td>202064583</td>
+                            <td>Guillermo</td>
+                            <td>Perez</td>
+                            <td>Martinez</td>
+                            <td>2226540924</td>
+                            <td>Urbano Ambiental</td>
+                        </tr>
+                        <tr>
+                            <td>202267432</td>
+                            <td>Julian</td>
+                            <td>Gómez</td>
+                            <td>Silva</td>
+                            <td>2226450267</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202487693</td>
+                            <td>Berenice</td>
+                            <td>Torres</td>
+                            <td>Luján</td>
+                            <td>2229764589</td>
+                            <td>Diseño Gráfico</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <a href="../index.html"><img id="inicio" src="../imagenes/icono-tablas.png" alt="Ícono con enlace a página de inicio"></a>
+        </main>
+        <footer id="fondo">
+            <h6 class="animate__animated animate__bounceIn animate__delay-5s animate__repeat-4 animate__slower">Elaborado por Mariana Peralta Sánchez</h6>
+        </footer>
+    </body>
+</html>

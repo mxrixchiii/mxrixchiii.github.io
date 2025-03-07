@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>Formularios en HTML</title>
+        
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        
+        <style>
+            section{
+                text-align: justify;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <img id="logo_der" src="../imagenes/simbolo.png" alt="marca_personal">
+            <img style="float: left;" id="logo_izq" src="../imagenes/simbolo.png" alt="marca_personal">
+            <h1 class="animate__animated animate__flipInx animate__slower">FORMULARIOS EN HTML</h1>
+        </header>
+        <nav id="fondo">
+            <ul>
+                <li><a class="animate__animated animate__flash animate__delay-3s animate__slower" href="formatos_texto.html" target="_blank">Formatos</a></li>
+                <li class="hover_2"><a class="animate__animated animate__flash animate__delay-3s animate__slower" id="listas_enlace" href="Listas.html"target="_blank">Listas</a></li>
+                <li><a class="animate__animated animate__flash animate__delay-3s animate__slower" href="Enlaces.html"target="_blank">Enlaces</a></li>
+                <li class="hover_2"><a class="animate__animated animate__flash animate__delay-3s animate__slower" href="Tablas.html"target="_blank">Tablas</a></li>
+                <li><a class="animate__animated animate__flash animate__delay-3s animate__slower" href="Imagenes.html"target="_blank">Imagenes</a></li>
+                <li class="hover_2"><a class="animate__animated animate__flash animate__delay-3s animate__slower" href="Audio.html"target="_blank">Audios</a></li>
+                <li><a class="animate__animated animate__flash animate__delay-3s animate__slower" href="../html/videos.html"target="_blank">Videos</a></li>
+                <li class="hover_2"><a class="animate__animated animate__flash animate__delay-3s animate__slower" href="../html/formularios.html"target="_blank">Formularios</a></li>
+            </ul>
+        </nav>
+        <main> 
+           <section class="animate__animated animate__bounceInLeft animate__delay-5s animate__slower">
+               <h2>Formulario</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestias unde, autem quae dolorem architecto quis, maiores adipisci, deserunt assumenda corporis tempora temporibus impedit. Reiciendis voluptatibus dolorum, autem quae. Officiis odio, omnis rerum magnam voluptatibus assumenda quo commodi minus iste doloremque facere libero, harum temporibus suscipit, ducimus. Quibusdam similique quasi quas ipsam excepturi laboriosam doloribus corporis modi temporibus accusantium cumque at impedit fuga neque, asperiores nemo consectetur, dolore, maxime natus sunt aliquid nostrum praesentium tempora quae quia. Nam incidunt quae, molestiae? Debitis nam voluptas incidunt eum possimus, repudiandae error, perspiciatis officia, perferendis voluptatem dolorem maiores aperiam ut beatae veniam voluptatum.</p>
+               <form action="" method="get">
+                   <label for="fnombre">Nombre</label>
+                   <input type="text" id="fnombre" name="fnombre" value="Escribe tu nombre...">
+                   <label for="fapellido">Apellido</label>
+                   <input type="text" id="fapellido" name="fapellido" value="Escribe tu apellido...">
+                   <input type="submit" value="ENVIAR">
+               </form>
+           </section>
+           <section class="animate__animated animate__bounceInLeft animate__delay-5s animate__slower">
+               <h2>Formulario</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio incidunt laudantium similique fugiat aperiam dolores repellat, ratione, facilis ipsum eaque, suscipit mollitia hic rerum iusto obcaecati odit deserunt dicta, amet. Sunt quia eum at illum autem iure maxime, quod veritatis cum tenetur recusandae quam? Officiis quod quam velit dolorem, quibusdam est perspiciatis repellat corrupti sapiente qui unde voluptatum maxime impedit non maiores reprehenderit ipsam ducimus pariatur animi ad! Aperiam omnis veritatis, tenetur optio dolorum impedit soluta adipisci non explicabo cumque. Officiis in at officia tenetur ratione architecto modi labore? Tempore maiores voluptatibus, sunt beatae, blanditiis esse. Natus illo, expedita molestias.</p>
+               <form action="" method="get">
+                   <label for="telefono">Ingresa tu número celular:</label>
+                   <small>10 dígitos</small>
+                   <input type="tel" id="telefono" name="telefono" value="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                   
+                   <label for="cumpleaños">¿Cuándo es tu cumpleaños?</label>
+                   <input type="date" id="cumpleaños" name="cumpleaños">
+                   
+                   <label for="colorfav">Escoge tu color favorito:</label>
+                   <input type="color" id="colorfav" name="colorfav" value="#D97E8E">
+                   
+                   <p style="margin-bottom: 20px; margin-top: 0px;"><b>¿A qué universidad perteneces?</b></p>
+                   <input type="radio" id="universidad1" name="universidad" value="BUAP">
+                   <label for="universidad1">Benemérita Universidad Autónoma de Puebla</label><br>
+                   <input type="radio" id="universidad2" name="universidad" value="UVP">
+                   <label for="universidad2">Universidad del Valle de Puebla</label><br>
+                   <input type="radio" id="universidad3" name="universidad" value="ITP">
+                   <label for="universidad3">Instituto Tecnológico de Puebla</label><br>
+                   
+                   <input type="submit" value="ENVIAR">
+                   
+                   <input type="button" onclick="alert('¡Gracias por tu participación en el formulario! :) ')" value="¡Da click aquí al terminar!">
+               </form>
+           </section>
+           <section class="animate__animated animate__bounceInLeft animate__delay-5s animate__slower">
+               <h2>Formulario</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorum, error, voluptates atque totam ex laborum dolores, odio illum quasi facilis ad ipsam voluptate ipsum cumque. Corporis unde dolor nesciunt ab sapiente porro facilis vitae, reprehenderit, deleniti voluptatum exercitationem blanditiis aperiam voluptate animi suscipit id sunt, et? Fugit ratione quod obcaecati nihil quisquam, nemo quam consequuntur eligendi mollitia. Adipisci possimus, in. Quibusdam dolore, accusantium magni ratione, voluptates nam dicta aperiam suscipit laudantium, similique doloremque? Perspiciatis recusandae dolor sint quia ipsum at culpa nobis sapiente sed ipsa ea, impedit sunt rerum provident numquam voluptates obcaecati repudiandae, id necessitatibus. Impedit, minus, similique.</p>
+               <form method="get" action="">
+                   <label for="fnombre1">Nombre:</label>
+                   <input type="text" id="fnombre1" name="fnombre1" value="Escribe tu nombre...">
+                   
+                   <label id="genero" for="genero">Género:</label><br>
+                   <input type="radio" id="masculino" name="genero" value="masculino">
+                   <label>Masculino</label>
+                   <input type="radio" id="femenino" name="genero" value="femenino">
+                   <label>Femenino</label><br>
+                   
+                   <label for="pais">País:</label>
+                   <select id="pais-ul" name="pais-ul">
+                       <option value="mx">México</option>
+                       <option value="es">España</option>
+                       <option value="us">Estados Unidos</option>
+                       <option value="it">Italia</option>
+                       <option value="co">Colombia</option>
+                       <option value="bo">Bolivia</option>
+                   </select><br>
+                   
+                   <label for="colorfav">Escoge tu color favorito:</label>
+                   <input type="color" id="colorfav" name="colorfav" value="#FEE5E1">
+                   
+                   <label for="">Género musical con el que te identifiques:</label>
+                   <small>Selecciona 1 o más.</small><br>
+                   <input type="checkbox" id="g-musical1" name="g-musical1" value="Jazz">
+                   <label for="g-musical1">Jazz</label><br>
+                   <input type="checkbox" id="g-musical2" name="g-musical2" value="Rock">
+                   <label for="g-musical2">Rock</label><br>
+                   <input type="checkbox" id="g-musical3" name="g-musical3" value="Indie">
+                   <label for="g-musical3">Indie</label><br>
+                   <input type="checkbox" id="g-musical4" name="g-musical4" value="Tropical">
+                   <label for="g-musical4">Tropical</label><br>
+                   
+                   <input type="submit" value="ENVIAR">
+               </form>
+           </section>
+           <section class="animate__animated animate__bounceInLeft animate__delay-5s animate__slower">
+               <h2>Formularios</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos qui, dignissimos, at totam neque placeat nam nemo tempore iure eum quibusdam, velit perspiciatis! Accusamus iusto alias nobis vel eveniet laborum labore, dolore voluptates molestias possimus laboriosam, facere natus error reiciendis dolorum laudantium cum earum perferendis culpa. Assumenda expedita totam cum non reprehenderit laudantium accusamus voluptas quia quisquam quidem et facilis sit labore, culpa iure consectetur, deleniti earum dolorum, sequi excepturi id quas dignissimos. Fugit, provident! Porro adipisci, ab inventore, aliquam delectus sint minus autem dolorem. Similique perspiciatis quod vel exercitationem sed, id consectetur eaque molestiae consequuntur expedita laboriosam eveniet atque.</p>
+               <form method="get" action="">
+                   <h3 id="reclutamiento"><b>Condonación 2025</b></h3>
+                   
+                   <label for="Matricula">Matrícula:</label>
+                   <small>(Únicamente 9 dígitos)</small><br>
+                   <input type="password" id="contraseña" name="contraseña" value="000000000">
+                   
+                   <label for="correo">Escribe tu correo institucional:</label>
+                   <input type="email" id="correo" name="correo" value="correo_ejemplo@alumno.buap.mx">
+                   
+                   <label for="archivo">Kardex:</label>
+                   <input type="file" id="archivo" name="archivo"><br>
+                   
+                   <label for="promedio">Promedio:</label>
+                   <small>Redondea para eliminar decimales.</small>
+                   <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="0"><br>
+                   
+                   <label for="fecha">Fecha y hora del pago de póliza:</label>
+                   <input type="datetime-local" id="datemin" name="datemin" min="2024-12-31" max="2025-03-01">
+                   
+                   <input type="image"  src="../imagenes/reiniciar1.png" alt="Reset" width="48px" height="auto">
+                   
+                   <input type="submit" value="ENVIAR">
+               </form>
+           </section>
+           <section class="animate__animated animate__bounceInLeft animate__delay-5s animate__sloweLeft">
+               <h2>Formularios</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ipsam quos dolores cum, explicabo quisquam dolorum id sapiente reprehenderit ex hic perferendis itaque cumque distinctio maxime maiores voluptas quae incidunt temporibus fuga provident ullam? Deserunt earum soluta at exercitationem, minima repellat fugit ipsam rerum molestiae, quia aliquam totam quam, aliquid consequuntur porro placeat velit hic vel impedit eveniet asperiores! Accusamus nesciunt fugit officiis exercitationem! Et voluptatem cum quasi, natus maiores harum beatae eos, exercitationem nobis architecto illo consequatur asperiores dignissimos, amet quae, sit. Omnis inventore, aperiam exercitationem. Voluptates blanditiis aliquid nemo, minima eius error debitis nihil alias totam iure placeat?</p>
+               <form method="get" action="">
+                   <h3 id="reclutamiento"><b>Reclutamiento 2025:</b></h3>
+                   
+                   <label for="titulacion">Fecha de Titulación:</label>
+                   <input type="month" id="titulacion" name="titulacion">
+                   
+                   <label for="portafolio">Agrega el URL de tu portafolio:</label>
+                   <input type="url" id="portafolio" name="portafolio" value="URL"><br>
+                   
+                   <label for="nivel_ingles">Nivel de Inglés:</label>
+                   <small>(A1, A2, B1, B2, C1, C2)</small><br>
+                   <input type="range" id="ingles" name="ingles" min="0" max="6">
+                   
+                   <label for="descripcion">¿Qué opinan los demás sobre ti?</label>
+                   <textarea>Elige a la persona quien creas puede representar mejor tus virtudes mediante palabras y escribe aquí su opinión sobre ti.
+                   
+Puede ser un amigo, cliente, compañero, familiar, pareja, jefe anterior, etc.
+                   </textarea>
+                   
+                   <label for="busqueda">Búsqueda:</label>
+                   <input type="search" id="busqueda" name="busqueda" value="Buscar">
+                   
+                   <input type="submit" value="ENVIAR">
+               </form>
+            </section>
+            <section class="animate__animated animate__bounceInLeft animate__delay-5s animate__sloweLeft">
+               <h2>Formularios</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ipsam quos dolores cum, explicabo quisquam dolorum id sapiente reprehenderit ex hic perferendis itaque cumque distinctio maxime maiores voluptas quae incidunt temporibus fuga provident ullam? Deserunt earum soluta at exercitationem, minima repellat fugit ipsam rerum molestiae, quia aliquam totam quam, aliquid consequuntur porro placeat velit hic vel impedit eveniet asperiores! Accusamus nesciunt fugit officiis exercitationem! Et voluptatem cum quasi, natus maiores harum beatae eos, exercitationem nobis architecto illo consequatur asperiores dignissimos, amet quae, sit. Omnis inventore, aperiam exercitationem. Voluptates blanditiis aliquid nemo, minima eius error debitis nihil alias totam iure placeat?</p>
+               <form action="" method="get">
+                   <label for="nombre2">Nombre:</label>
+                   <input type="text" id="nombre2" name="nombre2" value="Escribe tu nombre aquí...">
+                   
+                   <label for="email1">Email:</label>
+                   <input type="text" id="email1" name="email1" value="correo_ejemplo@dominio">
+                   
+                   <label for="mensaje">Comentario:</label>
+                   <textarea name="mensaje" rows="30" cols="40">Escribe tu mensaje aquí...</textarea>
+                   
+                   <input type="submit" value="ENVIAR">
+               </form>
+            </section>
+            <a id="inicio" href="../index.html"><img src="../imagenes/icono-linkrel.png" alt="Ícono con enlace a página de inicio"></a><br><br><br>
+        </main>
+        <footer id="fondo">
+            <h6>Elaborado por Mariana Peralta Sánchez</h6>
+        </footer>
+    </body>
+</html>

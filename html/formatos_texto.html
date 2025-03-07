@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Formatos de Texto</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header,nav,main,footer{
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left:auto;
+                margin-right:auto;
+                padding: 30px;
+                width: 100%;
+            }
+            header{
+                height: auto;
+                background-color: #16404D;
+                color: #FBF5DD;
+                padding: 45px;
+                font-size: 24px;
+            }
+            h1,h2,h3,h4,h5,h6{
+                margin-bottom: 10px;
+                color: #0E2830;
+                font-family: "Poppins", serif;
+            }
+            header h1{
+                text-align: center;
+                color: #FBF5DD;
+                margin-bottom: 0;
+                font-family: "Poppins", serif;
+            }
+            nav{
+                height: auto;
+                background-color: #DDA853;
+                padding: 15px;
+            }
+            main{
+                height: auto;
+                background-color: #FBF5DD;
+                padding-top: 45px;
+                padding-bottom: 41px;
+                color: #16404D;
+                overflow-y: hidden;
+            }
+            section{
+                width: 65%;
+                min-width: 360px;
+                height: auto;
+                background-color: #A6CDC6;
+                margin-top: 10px;
+                margin-bottom: 45px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 35px;
+                overflow-y: auto;
+                font-family: "Public Sans", serif;
+                text-align: justify;
+            }
+            footer{
+                height: auto;
+                background-color: #DDA853;
+                font-size: 24px;
+            }
+            footer h6{
+                background-color: #A6CDC6;
+                padding: 9px;
+                width: 30%;
+                border-radius: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 3px;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+            ul{
+                text-align: center;
+            }
+            nav ul li{
+                width: 8%;
+                min-width: 120px;
+                background-color: #16404D;
+                list-style-type: none;
+                margin: 10px;
+                display: inline-block;
+                padding: 15px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            nav ul li a:visited,nav ul li a:link{
+                text-decoration: none;
+                color: #B8E3DB;
+                font-size: 16px;
+                font-family: "Public Sans", serif;
+            }
+            nav ul li:hover{
+                width: 10%;
+                background-color: #277087;
+            }
+            nav ul li a:hover{
+                color: #FBF5DD;
+            }
+            .hover_2:hover{
+                background-color: #0E2830;
+            }
+            .hover_2 a:hover{
+                color: #FBF5DD;
+            }
+            #fondo{
+                background-image:url(../imagenes/coordinado_Mesa%20de%20trabajo%201.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #logo_izq, #logo_der{
+                width: 50px;
+                float: right;
+                filter: opacity(15%);
+                margin-top: 0px;
+            }
+            #inicio{
+                float: right;
+                width: 44px;
+                height: 43px;
+                margin-right: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id="logo_der" src="../imagenes/simbolo.png" alt="marca_personal">
+            <img style="float: left;" id="logo_izq" src="../imagenes/simbolo.png" alt="marca_personal">
+            <h1 class="animate__animated animate__rotateInDownLeft animate__delay-1s animate__slow">FORMATOS DE TEXTO EN HTML</h1>
+        </header>
+        <nav id="fondo">
+            <!-- Menu de la pagina web -->
+            <ul>
+                <li><a href="formatos_texto.html"target="_blank">Formatos</a></li>
+                <li class="hover_2"><a id="listas_enlace" href="Listas.html"target="_blank">Listas</a></li>
+                <li><a href="Enlaces.html"target="_blank">Enlaces</a></li>
+                <li class="hover_2"><a href="Tablas.html"target="_blank">Tablas</a></li>
+                <li><a href="Imagenes.html"target="_blank">Imagenes</a></li>
+                <li class="hover_2"><a href="Audio.html"target="_blank">Audios</a></li>
+                <li><a href="../html/videos.html"target="_blank">Videos</a></li>
+                <li class="hover_2"><a href="../html/formularios.html"target="_blank">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="animate__animated animate__fadeInUp animate__delay-3s animate__slower">
+                <h1>Encabezado h1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id ante eu ipsum gravida suscipit id sed nunc. <b>Donec erat neque, molestie ac tincidunt eget, cursus id lorem. Maecenas eget tincidunt nunc. Fusce diam enim, sagittis sed convallis nec, volutpat id nisl. </b> Vestibulum pharetra eget lacus id tincidunt. Donec pharetra a urna sagittis suscipit. Curabitur sit amet magna iaculis, suscipit ex at, ultricies arcu. Suspendisse potenti.Sed sem lacus, luctus quis feugiat et, mattis eget nisl. In hac habitasse platea dictumst. Aenean sit amet nibh non nisl convallis viverra. Curabitur ornare tellus non odio rhoncus varius. Nunc elementum sodales diam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iste ullam tempora fugit soluta, eveniet assumenda dolores. Quae aliquam ipsam animi consequatur, ratione itaque ipsum. Consequuntur rem nobis harum quidem.
+                </p>
+            </section>
+            <section class="animate__animated animate__fadeInUp animate__delay-3s animate__slower">
+                <h2>Encabezado h2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id ante eu ipsum gravida suscipit id sed nunc. Donec erat neque, molestie ac tincidunt eget, cursus id lorem. <i>Maecenas eget tincidunt nunc. Fusce diam enim, sagittis sed convallis nec, volutpat id nisl. Vestibulum pharetra eget lacus id tincidunt. Donec pharetra a urna sagittis suscipit. Curabitur sit amet magna iaculis, suscipit ex at, ultricies arcu. Suspendisse potenti.Sed sem lacus, luctus quis feugiat et, mattis eget nisl. In hac habitasse platea dictumst. Aenean sit amet nibh non nisl convallis viverra. </i>Curabitur ornare tellus non odio rhoncus varius. Nunc elementum sodales diam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo officia fugit doloribus eaque quidem enim eveniet, fugiat. Eum quia ipsum asperiores, minus autem reiciendis laborum alias suscipit est pariatur.
+                </p>
+            </section>
+            <section class="animate__animated animate__fadeInUp animate__delay-3s animate__slower">
+                <h3>Encabezado h3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id ante eu ipsum gravida suscipit id sed nunc. <del>Donec erat neque, molestie ac tincidunt eget, cursus id lorem. Maecenas eget tincidunt nunc. Fusce diam enim, sagittis sed convallis nec, volutpat id nisl. Vestibulum pharetra eget lacus id tincidunt. Donec pharetra a urna sagittis suscipit. Curabitur sit amet magna iaculis, suscipit ex at, ultricies arcu.</del> Suspendisse potenti.Sed sem lacus, luctus quis feugiat et, mattis eget nisl. In hac habitasse platea dictumst. Aenean sit amet nibh non nisl convallis viverra. Curabitur ornare tellus non odio rhoncus varius. Nunc elementum sodales diam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint hic ducimus corporis voluptas, fugiat vero placeat maxime doloremque vitae, doloribus molestias deleniti, dolorum animi. Repellat ducimus sed eaque explicabo odio.
+                </p>
+            </section>
+            <section class="animate__animated animate__fadeInUp animate__delay-3s animate__slower">
+                <h4>Encabezado h4</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id ante eu ipsum gravida suscipit id sed nunc. <mark>Donec erat neque, molestie ac tincidunt eget, cursus id lorem. Maecenas eget tincidunt nunc. Fusce diam enim, sagittis sed convallis nec, volutpat id nisl. Vestibulum pharetra eget lacus id tincidunt. Donec pharetra a urna sagittis suscipit. Curabitur sit amet magna iaculis, suscipit ex at, ultricies arcu. </mark>Suspendisse potenti.Sed sem lacus, luctus quis feugiat et, mattis eget nisl. In hac habitasse platea dictumst. Aenean sit amet nibh non nisl convallis viverra. Curabitur ornare tellus non odio rhoncus varius. Nunc elementum sodales diam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ullam tempora odit, tempore saepe. Explicabo officia tempore odit dolor, corrupti dolore, pariatur voluptates, nemo obcaecati animi id harum eum dolorem.
+                </p>
+            </section>
+            <section class="animate__animated animate__fadeInUp animate__delay-3s animate__slower">
+                <h5>Encabezado h5</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id ante eu ipsum gravida suscipit id sed nunc. Donec erat neque, molestie ac tincidunt eget, cursus id lorem. <b><i><mark>H<sub>2</sub>O</mark></i></b> Maecenas eget tincidunt nunc. Fusce diam enim, sagittis sed convallis nec, volutpat id nisl. Vestibulum pharetra eget lacus id tincidunt. Donec pharetra a urna sagittis suscipit. Curabitur sit amet magna iaculis, suscipit ex at, ultricies arcu. Suspendisse potenti.Sed sem lacus, luctus quis feugiat et, mattis eget nisl. In hac habitasse platea dictumst. Aenean sit amet nibh non nisl convallis viverra. Curabitur ornare tellus non odio rhoncus varius. Nunc elementum sodales diam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate facere veritatis illum, animi eligendi perferendis quae dolorem iste explicabo, possimus tempore cupiditate inventore, adipisci itaque aspernatur debitis cum obcaecati enim.
+                    </p>
+            </section>
+            <section class="animate__animated animate__fadeInUp animate__delay-3s animate__slower">
+                <h6>Encabezado h6</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id ante eu ipsum gravida suscipit id sed nunc. <b><mark>h<sup>2</sup>=c<sup>2</sup>+c<sup>2</sup></mark></b> Donec erat neque, molestie ac tincidunt eget, cursus id lorem. Maecenas eget tincidunt nunc. Fusce diam enim, sagittis sed convallis nec, volutpat id nisl. Vestibulum pharetra eget lacus id tincidunt. Donec pharetra a urna sagittis suscipit. Curabitur sit amet magna iaculis, suscipit ex at, ultricies arcu. Suspendisse potenti.Sed sem lacus, luctus quis feugiat et, mattis eget nisl. In hac habitasse platea dictumst. Aenean sit amet nibh non nisl convallis viverra. Curabitur ornare tellus non odio rhoncus varius. Nunc elementum sodales diam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dignissimos aperiam, porro veniam, quasi labore magni voluptas, necessitatibus vel minus, nostrum eius eveniet velit? Dolorum nostrum sapiente soluta, minima saepe.
+                </p>
+            </section>
+            <a href="../index.html"><img id="inicio" src="../imagenes/icono-formatos.png" alt="Ícono con enlace a página de inicio"></a>
+        </main>
+        <footer id="fondo">
+            <h6 class="animate__animated animate__flash animate__delay-5s animate__repeat-3 animate__slower">Elaborado por Mariana Peralta Sánchez</h6>
+        </footer>
+    </body>
+</html>

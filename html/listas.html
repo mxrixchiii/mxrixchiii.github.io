@@ -1,0 +1,291 @@
+<html>
+    <head>
+        <title>Listas en html</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header, nav, main, section, p, footer{
+                width: 100%;
+                margin-bottom: 0;
+                margin-top: 0;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 30px;
+            }
+            header{
+                height: auto;
+                padding: 45px;
+                background-color: #3D8D7A;
+                color: seashell;
+                font-size: 24px;
+            }
+            nav{ 
+                height: auto;
+                padding: 15px;
+                background-color: #FFEAE1;
+            }
+            main{
+                height: auto;
+                background-color:seashell;
+                padding-top: 45px;
+                padding-bottom: 41px;
+                text-align: center;
+                overflow-x: hidden;
+            }
+            p, ul, ol{
+                text-align: justify;
+            }
+            section{
+                width: 40%;
+                min-width: 360px;
+                height: 700px;
+                padding: 35px;
+                margin-bottom: 45px;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                background-color: #FFEAE1;
+                overflow-y: auto;
+                overflow-x: hidden;
+                display: inline-block;
+                font-family: "Public Sans", serif;
+            }
+            h2{
+                margin-bottom: 5px;
+                margin-left: 10px;
+                color: #3D8D7A;
+                font-size: 26px;
+                font-family: "Poppins", serif;
+            }
+            h1,h6{
+                text-align: center;
+                font-family: "Poppins", serif;
+            }
+            p{
+                width: 98%;
+                margin-bottom: 30px;
+                margin-top: 20px;
+                padding: 20px;
+                background-color: #B3D8A8;
+                color: #3D8D7A;
+                text-align: justify;
+            }
+            main section ol, main section ul{
+                padding-left: 80px;
+                color: #306F60;
+            }
+            footer{
+                height: auto;
+                padding: 30px;
+                background-color: #B3D8A8;
+                color: #3D8D7A;
+                font-size: 24px;
+                text-align: center;
+            }
+            footer h6{
+                background-color: #FFEAE1;
+                color: #3D8D7A;
+                padding: 9px;
+                width: 30%;
+                border-radius: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 3px;
+            }
+            nav ul{
+                text-align: center;
+            }
+            nav ul li{
+                width: 8%;
+                min-width: 120px;
+                background-color: #3D8D7A;
+                list-style-type: none;
+                margin: 10px;
+                display: inline-block;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            ul li{
+                list-style-type: square;
+            }
+            ol li ul li{
+                list-style-type: circle;
+            }
+            ol li{
+                list-style-type: upper-roman;
+            }
+            /*nav ul li a:link,nav ul li a:visited{
+                text-decoration: none;
+                color: green;
+                margin: 10px;
+            }*/
+            nav ul li a{
+                text-decoration: none;
+                color: seashell;
+                font-size: 16px;
+                font-family: "Public Sans", serif;
+            }
+            nav ul li:hover{
+                width: 10%;
+                background-color: #306F60;
+            }
+            nav ul li a:hover{
+                color: #B3D8A8;
+            }
+            .hover_2:hover{
+                background-color: #B3D8A8;
+            }
+            .hover_2 a:hover{
+                color: darkgreen;
+            }
+            #box_listamixta{
+                height: 1100px;
+            }
+            #fondo{
+                background-image:url(../imagenes/coordinado_Mesa%20de%20trabajo%201.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #logo_izq, #logo_der{
+                width: 50px;
+                float: right;
+                filter: opacity(15%);
+                margin-top: 0px;
+            }
+            #inicio{
+                float: right;
+                width: 44px;
+                height: 43px;
+                margin-right: 14px;
+            }
+        </style>
+            
+    </head>
+    <body>
+        <header>
+            <img id="logo_der" src="../imagenes/simbolo.png" alt="marca_personal">
+            <img style="float: left;" id="logo_izq" src="../imagenes/simbolo.png" alt="marca_personal">
+            <h1 class="animate__animated animate__zoomInDown animate__slower">LISTAS EN HTML</h1>
+        </header>
+        <nav id="fondo">
+            <!--Menu-->
+            <ul>
+                <li><a href="formatos_texto.html"target="_blank">Formatos</a></li>
+                <li class="hover_2"><a id="listas_enlace" href="Listas.html"target="_blank">Listas</a></li>
+                <li><a href="Enlaces.html"target="_blank">Enlaces</a></li>
+                <li class="hover_2"><a href="Tablas.html"target="_blank">Tablas</a></li>
+                <li><a href="Imagenes.html"target="_blank">Imagenes</a></li>
+                <li class="hover_2"><a href="Audio.html"target="_blank">Audios</a></li>
+                <li><a href="../html/videos.html"target="_blank">Videos</a></li>
+                <li class="hover_2"><a href="../html/formularios.html"target="_blank">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="animate__animated animate__fadeInRight animate__delay-2s animate__slower">
+                <h2>Listas Desordenadas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in sem a diam laoreet finibus in eu nisi. Praesent gravida erat sed est euismod, in porta augue suscipit. Vestibulum eu sodales ligula. Sed consequat, lorem quis ullamcorper commodo, dolor lectus accumsan justo, accumsan placerat nunc nunc eleifend nunc. Vestibulum sed tincidunt urna, a ultricies nulla. Sed commodo enim vel metus egestas, a aliquam velit tempor. Pellentesque gravida magna scelerisque lorem imperdiet, ac interdum massa suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tincidunt aliquet quam, et molestie mauris venenatis placerat. Phasellus vel tempus dolor.</p>
+                <ul>
+                    <li>Argentina</li>
+                    <li>Brasil</li>
+                    <li>Colombia</li>
+                    <li>Dinamarca</li>
+                    <li>España</li>
+                    <li>Guatemala</li>
+                    <li>México</li>
+                    <li>Nigeria</li>
+                    <li>Puerto Rico</li>
+                    <li>Rusia</li>
+                    <li>Sudafrica</li>
+                    <li>Turquía</li>
+                </ul>
+            </section>
+            <section class="animate__animated animate__fadeInRight animate__delay-2s animate__slower">
+                <h2>Listas Ordenadas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida turpis quam, non sagittis velit commodo venenatis. Donec quis fringilla nunc, sit amet pretium orci. Duis condimentum, tortor sit amet posuere accumsan, dolor nisi convallis mi, id volutpat neque tellus nec enim. Donec scelerisque lacus a ligula finibus pellentesque. Nullam vel elit scelerisque nunc eleifend rutrum luctus non leo. Phasellus libero nisi, semper ac aliquam vitae, suscipit et nibh. Nam quis ornare arcu, at vehicula leo. Vestibulum aliquam vel massa.</p>
+                <ol>
+                    <li>Aguascalientes</li>
+                    <li>Baja California</li>
+                    <li>Colima</li>
+                    <li>Durango</li>
+                    <li>Estado de México</li>
+                    <li>Guanajuato</li>
+                    <li>Hidalgo</li>
+                    <li>Jalisco</li>
+                    <li>Michoacán</li>
+                    <li>Oaxaca</li>
+                    <li>Puebla</li>
+                    <li>San Luis Potosí</li>
+                    <li>Quintana Roo</li>
+    
+                </ol>
+            </section>
+            <section class="animate__animated animate__fadeInRight animate__delay-4s animate__slower" id="box_listamixta">
+                <h2>Listas Mixtas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eros eros, porttitor at nisl gravida, accumsan efficitur odio. Aliquam quis augue et neque rhoncus dignissim id non velit. Vestibulum eget consectetur dolor. Morbi viverra scelerisque mauris, nec luctus metus pulvinar non. Etiam hendrerit tempor orci a convallis. Quisque volutpat efficitur leo. Cras auctor ligula quis convallis tempor. Proin dignissim, orci nec blandit congue, leo enim aliquet purus, id hendrerit nibh est eget ipsum. Vestibulum tincidunt lorem quis tellus sodales, ut efficitur odio convallis. In lobortis luctus orci, lacinia tincidunt lacus congue et. Aliquam porta vel risus non varius. Sed quis sem vestibulum, gravida magna vel, bibendum eros. Integer turpis magna, ornare eu nisl ut, volutpat lobortis ante. Nunc diam risus.</p>
+                <ol>
+                    <li style="list-style-type: lower-alpha">Tabasco
+                        <ul>
+                            <li>Balancán</li>
+                            <li>Cárdenas</li>
+                            <li>Comalcalco</li>
+                        </ul>
+                    </li>    
+                    <li style="list-style-type: lower-alpha">Sonora
+                    </li>
+                    <li style="list-style-type: lower-alpha">Veracruz
+                        <ul>
+                            <li>Xalapa</li>
+                            <li>Papantla</li>
+                            <li>Orizaba</li>
+                            <li>Tlacotalpan</li>
+                            <li>Alvarado</li>
+                        </ul>
+                    </li>
+                    <li style="list-style-type: lower-alpha">Puebla
+                        <ul>
+                            <li>Cholula</li>
+                            <li>Atlixco</li>
+                            <li>Acajete</li>
+                            <li>Zacatlán</li>
+                            <li>Acatzingo</li>
+                            <li>Amozoc</li>
+                            <li>Calpan</li>
+                            <li>Izúcar de Matamoros</li>
+                            <li>Huejotzingo</li>
+                            <li>Chignahuapan</li>
+                            <li>Tehuitzingo</li>
+                        </ul>
+                    </li>
+                    <li style="list-style-type: lower-alpha">Oaxaca
+                        <ul>
+                        <li>Nochixtlán</li>
+                        <li>Huajuapan</li>
+                        <li>Juxtlahuaca</li>
+                        </ul>
+                    </li>    
+                    <li style="list-style-type: lower-alpha">Chihuahua
+                        <ul>
+                            <li>Camargo</li>
+                            <li>Juárez</li>
+                            <li>Parral</li>
+                        </ul>
+                    </li>
+                    <li style="list-style-type: lower-alpha">Nuevo León
+                    </li>
+                </ol>
+            </section><br>
+            <a href="../index.html"><img id="inicio" src="../imagenes/icono-listas.png" alt="Ícono con enlace a página de inicio"></a>
+        </main>
+        <footer id="fondo">
+            <h6 class="animate__animated animate__zoomIn animate__delay-5s animate__repeat-3 animate__slower">Elaborado por Mariana Peralta Sánchez</h6>
+        </footer>
+        
+    </body>
+</html>

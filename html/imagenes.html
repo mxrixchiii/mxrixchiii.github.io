@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Imagenes en HTML</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        
+        <style>
+            section{
+                text-align: center;
+            }
+            p, h2{
+                text-align: justify;
+            }
+            .img_filtro{
+                width: 25%;
+                display: inline-block;
+                margin-left: 20px;
+                margin-right: 20px;
+                min-width: 250px;
+            }
+            #img_gray{
+                filter: grayscale(100%);
+            }
+            #img_brillo{
+                filter: brightness(150%);
+            }
+            #img_contraste{
+                filter: contrast(140%);
+            }
+            #img_invert{
+                filter: invert(100%);
+            }
+            #img_opacidad{
+                filter: opacity(50%);
+            }
+            #img_saturacion{
+                filter: saturate(150%);
+            }
+            #img_sepia{
+                filter: sepia(100%);
+            }
+            #img_blur{
+                filter: blur(2px);
+            }
+            #img_hue{
+                filter: hue-rotate(250deg);
+            }
+            #img_shadow{
+                filter: drop-shadow(10px 10px 10px gray);
+            }
+            #img_3filtros{
+                filter: brightness(110%);
+                filter: saturate(120%);
+                filter: hue-rotate(320deg);
+            }
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <img id="logo_der" src="../imagenes/simbolo.png" alt="marca_personal">
+            <img style="float: left;" id="logo_izq" src="../imagenes/simbolo.png" alt="marca_personal">
+            <h1 class="animate__animated animate__bounceIn animate__slow animate__delay-1s">IMAGENES EN HTML</h1>
+        </header>
+        <nav id="fondo">
+            <ul class="animate__animated animate__backInRight animate__delay-1s animate__slower">
+                <li><a href="formatos_texto.html"target="_blank">Formatos</a></li>
+                <li class="hover_2"><a id="listas_enlace" href="Listas.html"target="_blank">Listas</a></li>
+                <li><a href="Enlaces.html"target="_blank">Enlaces</a></li>
+                <li class="hover_2"><a href="Tablas.html"target="_blank">Tablas</a></li>
+                <li><a href="Imagenes.html"target="_blank">Imagenes</a></li>
+                <li class="hover_2"><a href="Audio.html"target="_blank">Audios</a></li>
+                <li><a href="../html/videos.html"target="_blank">Videos</a></li>
+                <li class="hover_2"><a href="../html/formularios.html"target="_blank">Formularios</a></li>
+            </ul>
+        </nav>
+        <main id="main_img">
+            <section class="animate__animated animate__fadeIn animate__delay-2s animate__slower">
+                <h2>Imagen</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum vestibulum fringilla. Donec a sem posuere, rhoncus orci at, pellentesque dolor. Morbi ornare molestie sapien, porta tempus dolor gravida a. Maecenas suscipit ipsum quis pharetra vulputate. Sed laoreet bibendum risus ac efficitur. Etiam tincidunt neque ipsum, id hendrerit lacus blandit scelerisque. Nam porta, nibh vitae mollis ornare, tortor nisi mattis leo, eu dignissim elit mauris ac mauris. Mauris ultricies vestibulum finibus. Sed ultricies sapien eget justo commodo, quis euismod ipsum.</p>
+                <img src="../imagenes/san_valentine_one.jpg" alt="Corazón con texto de felicitación por día de San Valentín">
+            </section>
+            <section class="animate__animated animate__fadeIn animate__delay-3s animate__slower">
+                <h2>Imagen Animada</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at libero in lectus scelerisque mattis eget commodo nisi. Curabitur sagittis tempus mi vitae ornare. Pellentesque iaculis orci at risus condimentum tincidunt. Vestibulum dapibus imperdiet tortor et ultrices. Nunc id purus odio. Integer dignissim felis vel lectus euismod dictum. Integer efficitur.</p>
+                <img id="imagen_animada" src="../imagenes/come_galletas.gif" alt="Dibujo animado del Come galletas con un corazón">
+            </section>
+            <section class="animate__animated animate__fadeIn animate__delay-4s animate__slower">
+                <h2>Imagen como Ícono</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus, quam in dignissim lacinia, ante mauris vehicula mauris, nec ultricies quam felis et urna. Curabitur a elit sed enim porta sodales nec non erat. Morbi a auctor tellus, vitae rutrum nisi. Cras facilisis faucibus orci. Suspendisse ac viverra justo. Maecenas tortor enim, lobortis ut ornare eu, viverra nec felis. Maecenas cursus, ex eget rhoncus scelerisque, nibh dolor luctus sem, ut.</p>
+                <a href="https://historia.nationalgeographic.com.es/a/verdadera-historia-san-valentin-origen-celebracion_15084"> <img class="animate__animated animate__heartBeat animate__delay-5s animate__slow animate__infinite" id="imagen_ico" src="../imagenes/corazon.png" alt="corazon con enlace" target="new"></a>
+            </section>
+            <section class="animate__animated animate__fadeIn animate__delay-5s animate__slower">
+                <h2>Imagenes Flotantes</h2>
+                <p><img id="img_left" class="img_flotantes" src="../imagenes/corazones.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque id justo non suscipit. Mauris ante orci, dignissim vitae aliquet luctus, varius a quam. In ut risus metus. Nulla ut luctus ipsum. Phasellus et lacus ac sapien maximus dictum vitae vel elit. Vestibulum rhoncus, erat sit amet commodo rutrum, lacus libero porttitor purus, eu blandit sapien lorem a massa. Sed eu tristique libero. Cras imperdiet justo ut odio molestie ullamcorper. Duis ante erat, maximus vitae erat id, facilisis auctor ipsum. Vivamus viverra aliquet libero ac auctor. Aliquam non nulla nunc. Praesent finibus sem sed rutrum auctor. Donec ac ligula quis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque id justo non suscipit. Mauris ante orci, dignissim vitae aliquet luctus, varius a quam. In ut risus metus. Nulla ut luctus ipsum. Phasellus et lacus ac sapien maximus dictum vitae vel elit. Vestibulum rhoncus, erat sit amet commodo rutrum, lacus libero porttitor purus, eu blandit sapien lorem a massa. Sed eu tristique libero. Cras imperdiet justo ut odio molestie ullamcorper. Duis ante erat, maximus vitae erat id, facilisis auctor ipsum. Vivamus viverra aliquet libero ac auctor. Aliquam non nulla nunc. Praesent finibus sem sed rutrum auctor. Donec ac ligula quis.</p>
+                <p><img id="img_right" class="img_flotantes" id="img_right" src="../imagenes/corarosa.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque id justo non suscipit. Mauris ante orci, dignissim vitae aliquet luctus, varius a quam. In ut risus metus. Nulla ut luctus ipsum. Phasellus et lacus ac sapien maximus dictum vitae vel elit. Vestibulum rhoncus, erat sit amet commodo rutrum, lacus libero porttitor purus, eu blandit sapien lorem a massa. Sed eu tristique libero. Cras imperdiet justo ut odio molestie ullamcorper. Duis ante erat, maximus vitae erat id, facilisis auctor ipsum. Vivamus viverra aliquet libero ac auctor. Aliquam non nulla nunc. Praesent finibus sem sed rutrum auctor. Donec ac ligula quis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque id justo non suscipit. Mauris ante orci, dignissim vitae aliquet luctus, varius a quam. In ut risus metus. Nulla ut luctus ipsum. Phasellus et lacus ac sapien maximus dictum vitae vel elit. Vestibulum rhoncus, erat sit amet commodo rutrum, lacus libero porttitor purus, eu blandit sapien lorem a massa. Sed eu tristique libero. Cras imperdiet justo ut odio molestie ullamcorper. Duis ante erat, maximus vitae erat id, facilisis auctor ipsum. Vivamus viverra aliquet libero ac auctor. Aliquam non nulla nunc. Praesent finibus sem sed rutrum auctor. Donec ac ligula quis.</p>
+            </section>
+            <section id="fondo_img" class="animate__animated animate__fadeIn animate__delay-2s animate__slower animate__repeat-2">
+                <h2 style="color: #A25865; font-size: 30px; font-weight:bold;">Imagen como fondo o background</h2>
+                <p class="parrafo_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam molestiae deserunt adipisci dolore nesciunt natus sapiente voluptatibus quos itaque temporibus laudantium nemo exercitationem minus beatae ut, unde aperiam ab ad amet fuga sint, ipsum. Ut nesciunt laborum sunt et omnis. Libero, delectus, eaque quod amet obcaecati earum recusandae ullam doloremque ab voluptatum accusantium doloribus ratione odio dolor necessitatibus, sit pariatur quaerat similique, dolorum et. Culpa ullam dolorem ipsam, voluptate alias laborum cum nesciunt impedit libero id amet aliquid ducimus fugiat sit expedita quasi nisi molestiae voluptatum sed corporis. Consectetur nisi numquam reprehenderit, saepe voluptate ea quis, placeat unde quo.</p>
+                <p class="parrafo_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nisi, eum. Mollitia dolores aperiam laudantium animi id quas aut rem nulla omnis, maxime soluta possimus ipsa consectetur temporibus aliquam architecto velit. Similique magni reprehenderit, rem aliquid ullam animi harum autem aliquam voluptas eaque error, quisquam, facilis? Quasi vero odio modi facilis ipsa iure libero impedit eveniet incidunt sed. Laudantium quo tempora aspernatur debitis dicta quidem delectus voluptas cumque quae nesciunt, iste non laboriosam minima provident ipsum molestias, illo modi nisi.</p>
+                <p class="parrafo_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minima, nesciunt cupiditate repellendus assumenda, voluptatem est eligendi debitis, repellat asperiores aperiam laudantium. Officiis officia sint at voluptas ea fuga aliquam necessitatibus, vero deserunt ex molestiae tempore cupiditate dolorum maiores! Odio similique neque error a voluptas, sit magni praesentium laboriosam explicabo aperiam non possimus itaque, natus, et quibusdam, quisquam maxime asperiores.</p>
+            </section>
+            <section class="animate__animated animate__fadeIn animate__delay-2s animate__slower animate__repeat-3">
+                <h2>Imagenes Con Filtro</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui neque impedit ex ducimus possimus nesciunt fugiat, recusandae rerum optio consectetur similique, amet dolores, minima odit corrupti sequi laborum praesentium reiciendis voluptate. Sit dolor, reiciendis et quaerat! Amet unde, error earum qui quia sapiente excepturi beatae officia suscipit. Ullam quibusdam molestiae distinctio repudiandae rem eos commodi doloribus recusandae quam corporis ipsum a unde dolorem consectetur, impedit magnam iure consequatur excepturi explicabo deleniti dolores debitis! Voluptatum neque similique ad tempora molestiae voluptate perspiciatis ratione soluta nostrum porro aspernatur itaque, nobis aliquam consequatur dolor, temporibus nihil pariatur quod explicabo ipsam. Reiciendis minima, hic perspiciatis corporis soluta illum laudantium expedita tenetur obcaecati, explicabo laboriosam distinctio, sed dignissimos repudiandae harum quis consequuntur eaque id aperiam recusandae! Molestiae esse, rerum magni, at veritatis maxime expedita ex officiis iure corporis explicabo illum accusamus aliquid sunt dolores necessitatibus possimus optio animi quidem saepe! Mollitia quisquam, nemo optio ea, delectus reiciendis quis, dolorem assumenda quia exercitationem neque? Nesciunt quae illum et quo dolorem voluptas molestiae quas, animi repellat qui, laudantium maiores assumenda maxime soluta magnam reiciendis! Illum consectetur asperiores ut, quia delectus, maxime minus, sunt placeat sed error eligendi accusamus! Perferendis, tempora! Obcaecati ad rerum at quasi repellat quos.
+                </p>
+                <img class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_gray" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_brillo" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_contraste" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_invert" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_opacidad" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_saturacion" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_sepia" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_blur" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_hue" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_shadow" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+                <img id="img_3filtros" class="img_filtro" src="../imagenes/imagen_filtro.jpg">
+            </section>
+            <a id="inicio" href="../index.html"><img src="../imagenes/icono-linkrel.png" alt="Ícono con enlace a página de inicio"></a><br><br><br>
+        </main>
+        <footer id="fondo">
+            <h6>Elaborado por Mariana Peralta Sanchez</h6>
+        </footer>
+    </body>
+</html>
